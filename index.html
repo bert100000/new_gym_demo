@@ -43,14 +43,60 @@
             font-size: 26px;
         }
 
-        .img10 {
-            text-align: center;
+        #img10 {
+            background-color: aquamarine;
+            margin-left: 100px;
+
+        }
+
+        #img10 img {
+            background-color: white;
+            padding: 5px;
+            width: 30%;
         }
 
         #container {
             width: 80%;
             margin: 12px auto;
             text-align: center;
+        }
+
+        ol {
+            text-align: left;
+        }
+
+        li {
+            margin-left: 12px;
+            font-size: 22px;
+        }
+
+        ul a {
+            text-decoration: none;
+        }
+
+        ul a:hover {
+            color: #4ed618;
+        }
+
+        ul a:visited {
+            color: blue
+        }
+
+        ul a:active {
+            color: aquamarine
+        }
+
+        #main-table {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #main-table th {
+            background-color: gold;
+        }
+
+        #main-table td {
+            background-color: darkkhaki
         }
     </style>
 
@@ -76,33 +122,35 @@
             </a>
         </div>
         <div class="sub-title">健身的5個好處</div>
-        <div class="content">
+        <ol>
             <li>促進新陳代謝</li>
             <li>窈窕健康的身材</li>
             <li>認識更多健身教練</li>
             <li>更多被搭訕機會</li>
             <li>變更帥</li>
-        </div>
+        </ol>
         <hr>
-        <div class="img10">
-            <img src="./images/photo-1549476464-37392f717541.avif" alt="" width="20%">
-            <img src="./images/photo-1562771242-a02d9090c90c.avif" alt="" width="20%" height="30%">
-            <img src="./images/photo-1599058917212-d750089bc07e.avif" alt="" width="20%">
+        <div id="img10">
+            <img src="./images/photo-1549476464-37392f717541.avif" alt="">
+            <img src="./images/photo-1562771242-a02d9090c90c.avif" alt="">
+            <img src="./images/photo-1599058917212-d750089bc07e.avif" alt="">
         </div>
         <div class="sub-title">相關文章連結</div>
         <div class="content">
-            <li>
-                <a href="https://www.harpersbazaar.com/tw/beauty/bodyandhealth/g36513327/home-fitness-equipment/"
-                    target="_blank">健身器材購買網頁</a>
-            </li>
-            <li>
-                <a href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"
-                    target="blank">健身迷思</a><br>
-            </li>
-            <li>
-                <a href="https://www.vogue.com.tw/beauty/article/%E9%81%8B%E5%8B%95%E9%A0%BB%E7%8E%87-%E5%81%A5%E8%BA%AB-%E9%81%8B%E5%8B%95"
-                    target="_blank">健身三大招</a><br>
-            </li>
+            <ul style="list-style:none">
+                <li>
+                    <a href="https://www.harpersbazaar.com/tw/beauty/bodyandhealth/g36513327/home-fitness-equipment/"
+                        target="_blank">健身器材購買網頁</a>
+                </li>
+                <li>
+                    <a href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"
+                        target="blank">健身迷思</a><br>
+                </li>
+                <li>
+                    <a href="https://www.vogue.com.tw/beauty/article/%E9%81%8B%E5%8B%95%E9%A0%BB%E7%8E%87-%E5%81%A5%E8%BA%AB-%E9%81%8B%E5%8B%95"
+                        target="_blank">健身三大招</a><br>
+                </li>
+            </ul>
             參考連結:<br>
             <a target="_blank"
                 href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"><small>https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/</a></small>
@@ -110,7 +158,7 @@
         <hr>
         <div class="sub-title">一天所需卡路里</div>
         <div class="content">
-            <table border="3">
+            <table border="3" id="main-table">
                 <thead>
                     <tr>
                         <th>每天活動量</th>
