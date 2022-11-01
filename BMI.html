@@ -6,10 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI計算</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+    <style>
+        form{
+            width:50%;
+            margin:24px auto;
+        }
+  
+         @media screen and (max-width:1024px) {
+            form{
+                width:100%;
+         }
+            
+        }
+
+    </style>
+
 
 <body>
-    <h2>計算BMI</h2>
+    <div id="container">
+    <div class="title">計算BMI</div>
     <form action="">
         <p>
             <label for="Name">姓名:
@@ -23,17 +40,12 @@
             </label><br>
         </p>
         <p>
-            <button type="summit">點我開始BMI計算</button>
+            <button type="submit">計算</button>
         </p>
 
         <a href="./index.html">回首頁</a>
-
-
-
-
-
-
     </form>
+    </div>
 
 
 

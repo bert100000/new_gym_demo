@@ -1,0 +1,128 @@
+        body {
+            background-color: rgb(219, 223, 228);
+            font-family: 標楷體, 新細明體, 微軟正黑體, sans-serif
+        }
+
+        .title {
+            display: inline-block;
+            margin: 10px 30px;
+            color: #2a54e0;
+            background-color: #4ed618;
+            font-family: 微軟正黑體;
+            font-size: 32px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 12px
+        }
+
+        .text_1 {
+            border: 3px solid;
+        }
+
+        .text_3 {
+            text-align: left
+        }
+
+        .sub-title {
+            margin: 30px 250px;
+            background-color: rgb(72, 226, 201);
+            font-family: 微軟正黑體;
+            font-size: 28px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 12px
+        }
+
+        .content {
+            text-align: center;
+            font-size: 26px;
+        }
+
+        #img10 {
+            background-color: aquamarine;
+            margin-left: 100px;
+
+        }
+
+        #img10 img {
+            background-color: white;
+            padding: 5px;
+            width: 30%;
+        }
+
+        #container {
+            width: 80%;
+            margin: 12px auto;
+            text-align: center;
+        }
+
+        ol {
+            text-align: left;
+        }
+
+        li {
+            margin-left: 12px;
+            font-size: 30px;
+        }
+
+        ul a {
+            text-decoration: none;
+        }
+
+        ul a:hover {
+            color: #4ed618;
+        }
+
+        ul a:visited {
+            color: blue
+        }
+
+        ul a:active {
+            color: aquamarine
+        }
+
+        #main-table {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        #main-table th {
+            background-color: gold;
+        }
+
+        #main-table td {
+            background-color: darkkhaki
+        }
+
+        #main-table td:first-child {
+            color: midnightblue;
+            border-radius: 12px
+        }
+
+        #main-table td:nth-child(odd) {
+            background-color: aqua;
+        }
+
+        button[type="submit"] {
+            background-color: cyan;
+            font-size: 20px;
+            width: 60px;
+            border: none;
+            border-radius: 12px
+        }
+        input,textarea,label{
+            font-size:22px;
+            text-align:left;
+            margin:6px
+
+        }
+        form{
+            background-color: darksalmon;
+            margin:0 100px;
+            text-align:center;
+            border-radius:12px;
+            padding:12px 0;
+            color:white;
+        }

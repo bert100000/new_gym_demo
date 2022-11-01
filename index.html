@@ -5,100 +5,7 @@
     <meta charset="UTF-8">
     <!--這是顯示網頁的title-->
     <title>健身網站資訊</title>
-    <style>
-        body {
-            background-color: rgb(219, 223, 228);
-            font-family: 標楷體, 新細明體, 微軟正黑體, sans-serif
-        }
-
-        .title {
-            margin: 10px 30px;
-            color: #2a54e0;
-            background-color: #4ed618;
-            font-family: 微軟正黑體;
-            font-size: 32px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 12px
-        }
-
-        .text_1 {
-            border: 3px solid;
-        }
-
-        .sub-title {
-            margin: 30px 250px;
-            background-color: rgb(72, 226, 201);
-            font-family: 微軟正黑體;
-            font-size: 28px;
-            height: 50px;
-            line-height: 50px;
-            text-align: center;
-            border-radius: 12px
-        }
-
-        .content {
-            text-align: center;
-            font-size: 26px;
-        }
-
-        #img10 {
-            background-color: aquamarine;
-            margin-left: 100px;
-
-        }
-
-        #img10 img {
-            background-color: white;
-            padding: 5px;
-            width: 30%;
-        }
-
-        #container {
-            width: 80%;
-            margin: 12px auto;
-            text-align: center;
-        }
-
-        ol {
-            text-align: left;
-        }
-
-        li {
-            margin-left: 12px;
-            font-size: 22px;
-        }
-
-        ul a {
-            text-decoration: none;
-        }
-
-        ul a:hover {
-            color: #4ed618;
-        }
-
-        ul a:visited {
-            color: blue
-        }
-
-        ul a:active {
-            color: aquamarine
-        }
-
-        #main-table {
-            width: 90%;
-            margin: 0 auto;
-        }
-
-        #main-table th {
-            background-color: gold;
-        }
-
-        #main-table td {
-            background-color: darkkhaki
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 
 </head>
 
@@ -122,6 +29,7 @@
             </a>
         </div>
         <div class="sub-title">健身的5個好處</div>
+
         <ol>
             <li>促進新陳代謝</li>
             <li>窈窕健康的身材</li>
@@ -129,116 +37,117 @@
             <li>更多被搭訕機會</li>
             <li>變更帥</li>
         </ol>
-        <hr>
-        <div id="img10">
-            <img src="./images/photo-1549476464-37392f717541.avif" alt="">
-            <img src="./images/photo-1562771242-a02d9090c90c.avif" alt="">
-            <img src="./images/photo-1599058917212-d750089bc07e.avif" alt="">
-        </div>
-        <div class="sub-title">相關文章連結</div>
-        <div class="content">
-            <ul style="list-style:none">
-                <li>
-                    <a href="https://www.harpersbazaar.com/tw/beauty/bodyandhealth/g36513327/home-fitness-equipment/"
-                        target="_blank">健身器材購買網頁</a>
-                </li>
-                <li>
-                    <a href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"
-                        target="blank">健身迷思</a><br>
-                </li>
-                <li>
-                    <a href="https://www.vogue.com.tw/beauty/article/%E9%81%8B%E5%8B%95%E9%A0%BB%E7%8E%87-%E5%81%A5%E8%BA%AB-%E9%81%8B%E5%8B%95"
-                        target="_blank">健身三大招</a><br>
-                </li>
-            </ul>
-            參考連結:<br>
-            <a target="_blank"
-                href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"><small>https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/</a></small>
-        </div>
-        <hr>
-        <div class="sub-title">一天所需卡路里</div>
-        <div class="content">
-            <table border="3" id="main-table">
-                <thead>
-                    <tr>
-                        <th>每天活動量</th>
-                        <th>體重過輕者所需熱量</th>
-                        <th>體重正常者所需熱量</th>
-                        <th>體重過重、肥胖者所需熱量</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>輕度工作者</th>
-                        <td>35大卡 X 目前體重(公斤)</td>
-                        <td>30大卡 X 目前體重(公斤)</td>
-                        <td>20-25大卡 X 目前體重(公斤)</td>
-                    </tr>
-                    <tr>
-                        <th>中度工作者</th>
-                        <td>40大卡 X 目前體重(公斤)</td>
-                        <td>35大卡 X 目前體重(公斤)</td>
-                        <td>30大卡 X 目前體重(公斤)</td>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+    </div>
+    <hr>
+    <div id="img10">
+        <img src="./images/photo-1549476464-37392f717541.avif" alt="">
+        <img src="./images/photo-1562771242-a02d9090c90c.avif" alt="">
+        <img src="./images/photo-1599058917212-d750089bc07e.avif" alt="">
+    </div>
+    <div class="sub-title">相關文章連結</div>
+    <div class="content">
+        <ul style="list-style:none">
+            <li>
+                <a href="https://www.harpersbazaar.com/tw/beauty/bodyandhealth/g36513327/home-fitness-equipment/"
+                    target="_blank">健身器材購買網頁</a>
+            </li>
+            <li>
+                <a href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"
+                    target="blank">健身迷思</a><br>
+            </li>
+            <li>
+                <a href="https://www.vogue.com.tw/beauty/article/%E9%81%8B%E5%8B%95%E9%A0%BB%E7%8E%87-%E5%81%A5%E8%BA%AB-%E9%81%8B%E5%8B%95"
+                    target="_blank">健身三大招</a><br>
+            </li>
+        </ul>
+        參考連結:<br>
+        <a target="_blank"
+            href="https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/"><small>https://www.womenshealthmag.com/tw/fitness/work-outs/g39823093/workout-101/</a></small>
+    </div>
+    <hr>
+    <div class="sub-title">一天所需卡路里</div>
+    <div class="content">
+        <table border="3" id="main-table">
+            <thead>
+                <tr>
+                    <th>每天活動量</th>
+                    <th>體重過輕者所需熱量</th>
+                    <th>體重正常者所需熱量</th>
+                    <th>體重過重、肥胖者所需熱量</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><b>輕度工作者</b></td>
+                    <td>35大卡 X 目前體重(公斤)</td>
+                    <td>30大卡 X 目前體重(公斤)</td>
+                    <td>20-25大卡 X 目前體重(公斤)</td>
+                </tr>
+                <tr>
+                    <td><b>中度工作者</b></td>
+                    <td>40大卡 X 目前體重(公斤)</td>
+                    <td>35大卡 X 目前體重(公斤)</td>
+                    <td>30大卡 X 目前體重(公斤)</td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-            <p>
-                <a href="./BMI.html"><b>計算BMI:</b></a>&nbsp&nbsp
-                一位名眾身高160公分，體重65公斤，BMI=(65除以1.6*1.6)
-                <br>
-                <b>計算所需熱量</b>因他工作圍坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間
-            </p>
-        </div>
-        <div class="sub-title">健身影片</div>
-        <!-- <iframe width="663" height="373" src="https://www.youtube.com/embed/HOh06nBJ3to"
+        <p class="text_3">
+            <a href="./BMI.html"><b>計算BMI:</b></a>
+            一位名眾身高160公分，體重65公斤，BMI=(65除以1.6*1.6)
+            <br>
+            <b>計算所需熱量</b>因他工作圍坐辦公室，屬輕量工作，每天攝取熱量應在1300至1625大卡之間
+        </p>
+    </div>
+    <div class="sub-title">健身影片</div>
+    <!-- <iframe width="663" height="373" src="https://www.youtube.com/embed/HOh06nBJ3to"
         title="祖雄大膽聊Ｓ沒在怕！開後門、窒息式ＸＸ都試過 ～床上玩很大" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe> -->
-        <hr>
-        <div class="img10">
-            <video src="./video/1547101002.mp4" controls>
+    <hr>
+    <div class="img10">
+        <video src="./video/1547101002.mp4" controls>
 
-            </video>
-        </div>
-        <br>
+        </video>
+    </div>
+    <br>
 
-        <div class="sub-title">填寫表單</div>
-        <div class="content">
+    <div class="sub-title">填寫表單</div>
+    <div class="content">
+        <form action="">
+            <p>需要更多資訊?免費索取健身資訊</p>
+
             <form action="">
-                <p>需要更多資訊?免費索取健身資訊</p>
 
-                <form action="">
+                <label for="Email">EMAIL
+                    <input type="email" name="email" id="Email">
+                </label><br>
+                <br>
 
-                    <label for="Email">EMAIL
-                        <input type="email" name="email" id="Email">
-                    </label><br>
-                    <br>
-
-                    <label for="comment"><b>意見回饋</b><br>
-                        <textarea name="" id="comment" cols="30" rows="10">
+                <label for="comment"><b>意見回饋</b><br>
+                    <textarea name="" id="comment" cols="30" rows="10">
                 </textarea><br>
-                    </label>
-                    <button type="summit">確定送出</button>
+                </label>
+                <button type="submit">確定送出</button>
 
-                </form>
-        </div>
-
-
-
-
-        </form>
+            </form>
+    </div>
 
 
 
 
-
-        &copy;BERT LIN &#9670;&#10070;
-
+    </form>
 
 
-        </tbody>
+
+
+
+    &copy;BERT LIN &#9670;&#10070;
+
+
+
+    </tbody>
     </div>
 </body>
 
