@@ -1,57 +1,66 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI計算</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-    <style>
-        form{
-            width:50%;
-            margin:24px auto;
-        }
-  
-         @media screen and (max-width:1024px) {
-            form{
-                width:100%;
-         }
-            
-        }
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <style>
+    #box {
+      background-color: tomato;
+      margin-top: 24px;
+      padding: 24px 0px;
+      border-radius: 12px;
+      width: 50%;
+      margin: 24px auto;
+    }
 
-    </style>
+    @media screen and (max-width: 1024px) {
+      #box {
+        width: 100%;
+      }
+      input,
+      label,
+      textarea{
+        font-size: 18px;
+      }
+      #comment{
+        background-color: blanchedalmond;
+        width:80%;
+        height: 128px;
+        margin:0 auto;
+        font-size:64px;
+        line-height: 128px;
 
+      }
+    }
+  </style>
 
-<body>
+  <body>
     <div id="container">
-    <div class="title">計算BMI</div>
-    <form action="">
-        <p>
-            <label for="Name">姓名:
-                <input type="text" name="name" id="Name">
-            </label><br>
-            <label for="height">身高:
-                <input type="number" name="height" id="height" required step="0.1">
-            </label><br>
-            <label for="weight">體重:
-                <input type="number" name="Weight" id="weight" required step="0.1">
-            </label><br>
+      <div class="title">計算BMI</div>
+      <!--<form action="">-->
+        <div id="box">
+          <label for="Name">姓名:</label>
+          <input type="text" name="name" id="Name" placeholder="請輸入姓名"><br>
+          <label for="height">身高:</label>
+          <input type="number" name="height" id="height" required step="0.1" placeholder="請輸入身高"><br>
+          <label for="weight">體重:</label>
+          <input type="number"name="Weight"id="weight"required step="0.1" placeholder="請輸入體重"><br>
         </p>
         <p>
-            <button type="submit">計算</button>
+          <button type="submit" id="calc">計算</button>
         </p>
-
-        <a href="./index.html">回首頁</a>
-    </form>
+        <p id="comment">
+          BMI:24.5
+        </p>
+        
+      <!--</form>-->
     </div>
-
-
-
-
-
-
-</body>
-
+    <a href="./index.html">回首頁</a>
+  </div>
+    <script src="./js/BMI.js"></script>
+  </body>
 </html>
