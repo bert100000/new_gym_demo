@@ -12,30 +12,29 @@
       background-color: tomato;
       margin-top: 24px;
       padding: 24px 0px;
-      border-radius: 12px;
+      border-radius: 36px;
       width: 50%;
       margin: 24px auto;
     }
 
-    @media screen and (max-width: 1024px) {
+   @media screen and (max-width: 1024px) {
       #box {
         width: 100%;
       }
       input,
       label,
       textarea{
-        font-size: 18px;
+        font-size: 16px;
       }
-      #comment{
-        background-color: blanchedalmond;
-        width:80%;
+}
+      #comment {
+        background-color: rgb(205, 231, 53);
+        width:90%;
         height: 128px;
         margin:0 auto;
-        font-size:64px;
+        font-size:40px;
         line-height: 128px;
-
       }
-    }
   </style>
 
   <body>
@@ -54,7 +53,7 @@
           <button type="submit" id="calc">計算</button>
         </p>
         <p id="comment">
-          BMI:24.5
+          BMI:<span class="bmi"></span>
         </p>
         
       <!--</form>-->

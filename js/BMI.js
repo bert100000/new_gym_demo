@@ -13,10 +13,21 @@ console.log(calcEl);
 elementEl.innerText="BMI CALC";
 calcEl.innerHTML="<b>計算</b>"
 
+let comments =[
+    {'bmi':18.5,'color':'white','comment':'有點過輕，請多攝取營養'},
+    {'bmi':24,'color':'blue','comment':'正常範圍，繼續保持'},
+    {'bmi':27,'color':'green','comment':'有點過重，請增加運動'},
+    {'bmi':30,'color':'red','comment':'超重，嚴重超標值請注意身體健康'},
+];
+
+
 
 
 calcEl.addEventListener("click",()=>{
     //alert("click!");//
+    let bmiEl=document.querySelector("#comment .bmi");
+    console.log(bmiEl);
+
     let height=heightEl.value;
     let weight=weightEl.value;
     
@@ -31,8 +42,22 @@ calcEl.addEventListener("click",()=>{
     }
 
 
+   console.log((bmi));
+    //alert(`BMI:${bmi}`);
+   bmiEl.innerText= bmi;
 
+   let comments =[
+    {'bmi':18.5,'color':'white','comment':'有點過輕，請多攝取營養'},
+    {'bmi':24,'color':'blue','comment':'正常範圍，繼續保持'},
+    {'bmi':27,'color':'green','comment':'有點過重，請增加運動'},
+    {'bmi':30,'color':'red','comment':'超重，嚴重超標值請注意身體健康'},
+];
 
-    console.log(height,weight,getBMI(height,weight));
-    alert(`BMI:${bmi}`);
+   bmiEl.style.color="white";
+   for(let i=0;i<comments.length;i++){
+        if(bmi>=comments[i].bmi){
+            bmiEl.style.color=comments[i]["color"];
+            break;
+        }
+   }
 });
